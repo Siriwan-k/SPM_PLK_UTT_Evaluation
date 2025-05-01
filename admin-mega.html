@@ -1,0 +1,54 @@
+<div class="app-title">
+  <div class="title-h">
+    <h1><i class="bi bi-bell"></i> แจ้งประกาศ </h1>
+    <p>สำหรับแจ้งประกาศ กำหนดปฏิทินการดำเนินงาน</p>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="tile">
+    <form id="sendMega">
+      <div class="mb-2">
+        <b> ระบุข้อความที่ต้องการประกาศ </b>
+      </div>
+      <div class="mb-4">
+        <textarea class="form-control" id="Mega_Detail"></textarea>
+      </div>
+
+
+      <div class="row mb-4">
+        <div class="col-md-5">
+          <div class="mb-2">
+            <b> กำหนดวัน/เวลาในการดำเนินงาน </b>
+          </div>
+          <div>
+            <input type="datetime-local" class="form-control" id="Mega_Date">
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="mb-2">
+            <b> ระยะเวลาในการดำเนินงาน </b>
+          </div>
+          <div>
+            <span id="Mega_Realtime"></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-12 mb-4 text-center">
+        <button class="btn btn-primary col-md-12" type="submit"> บันทึกข้อมูล </button>
+      </div>
+
+      <div class="col-md-12 text-end">
+        <font color="gray">
+          <i> ปรับข้อมูลครั้งสุดท้าย <span id="Mega_Update"></span> </i>
+        </font>
+      </div>
+
+    </form>
+  </div>
+</div>

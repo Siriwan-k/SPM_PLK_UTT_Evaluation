@@ -1,0 +1,47 @@
+<!-- ✅ หัวเรื่อง -->
+<div class="app-title">
+  <div class="title-h">
+    <h1><i class="bi bi-clipboard-data"></i> รายงานความก้าวหน้าในการกรอกแบบนิเทศ</h1>
+    <p>ตรวจสอบการดำเนินงานแบบนิเทศตามนโยบาย “เรียนดี มีความสุข” ในระดับโรงเรียน สหวิทยาเขต และเขตพื้นที่</p>
+  </div>
+</div>
+
+<!-- ✅ Dropdown 1: สหวิทยาเขต -->
+<div class="mb-3">
+  <label for="clusterDropdown" class="form-label fw-bold">เลือกสหวิทยาเขต:</label>
+  <select class="form-select" id="clusterDropdown">
+    <option value="">-- เลือกสหวิทยาเขต --</option>
+  </select>
+</div>
+
+<!-- ✅ Dropdown 2: โรงเรียน -->
+<div class="mb-4">
+  <label for="schoolDropdown" class="form-label fw-bold">เลือกโรงเรียน:</label>
+  <select class="form-select" id="schoolDropdown" disabled>
+    <option value="">-- เลือกโรงเรียน --</option>
+  </select>
+</div>
+
+<!-- ✅ ตารางสรุป 13 นโยบาย -->
+<table class="table table-bordered text-center">
+  <thead class="table-success align-middle">
+    <tr>
+      <th rowspan="2">นโยบาย</th>
+      <th rowspan="2">ตัวชี้วัด</th>
+      <th colspan="2">ระดับโรงเรียน</th>
+      <th colspan="2">สหวิทยาเขต</th>
+      <th colspan="2">ระดับเขตพื้นที่</th>
+    </tr>
+    <tr>
+      <th>ดำเนินการ</th>
+      <th>สถานะ</th>
+      <th>ดำเนินการ</th>
+      <th>สถานะ</th>
+      <th>ดำเนินการ</th>
+      <th>สถานะ</th>
+    </tr>
+  </thead>
+  <tbody id="summaryTableBody">
+    <!-- JavaScript จะเติมข้อมูลตรงนี้ -->
+  </tbody>
+</table>

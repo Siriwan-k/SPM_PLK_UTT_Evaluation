@@ -1,0 +1,53 @@
+<!-- ✅ หัวเรื่อง -->
+<div class="app-title">
+  <div class="title-h">
+    <h1><i class="bi bi-journal-text"></i> ตรวจสอบความก้าวหน้าการรายงานผลการนิเทศ </h1>
+    <p>แบบนิเทศ ติดตามบูรณาการตามนโยบาย “เรียนดี มีความสุข” เพื่อพัฒนาคุณภาพผู้เรียน ให้ฉลาดรู้ ฉลาดคิด ฉลาดทำ
+      สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาพิษณุโลก อุตรดิตถ์</p>
+  </div>
+</div>
+
+<!-- ✅ dropdown เลือกโรงเรียน -->
+<div class="mb-4">
+  <h3 for="schoolDropdown" class="form-label fw-bold"> โรงเรียน </h3>
+  <select class="form-select" id="schoolDropdown">
+    <option value="">-- เลือกโรงเรียน --</option>
+    <!-- ตัวเลือกจะถูกเติมโดย JavaScript -->
+  </select>
+</div>
+
+<!-- ✅ สองคอลัมน์ -->
+<div class="text-bg-warning pb-1"> </div>
+<div class="row">
+
+  <!-- โรงเรียนที่เลือก -->
+  <div class="col-md-12">
+    <div class="tile">
+      <div class="tile-body">
+        <div class="table-responsive">
+
+          <table class="table table-hover table-bordered align-middle text-center">
+            <thead class="">
+              <tr class="align-middle">
+                <th style=" width: 50%;" rowspan="2">นโยบาย</th>
+                <th class="w-10" rowspan="2">ตัวชี้วัด</th>
+                <th colspan="2" class="table-light">ระดับโรงเรียน</th>
+                <th colspan="2" class="table-warning">สหวิทยาเขต</th>
+              </tr>
+              <tr class="align-middle">
+                <th class="w-10 table-light">ดำเนินการ</th>
+                <th class="w-10 table-light">สถานะ</th>
+                <th class="w-10 table-warning">ดำเนินการ</th>
+                <th class="w-10 table-warning">สถานะ</th>
+              </tr>
+            </thead>
+            <tbody id="combinedEvaTable">
+              <!-- สร้างจาก JS -->
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
